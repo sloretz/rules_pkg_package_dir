@@ -1,0 +1,13 @@
+load("//:rule_that_creates_file.bzl", "create_file")
+load("//:macro_using_pkg_tar.bzl", "macro_using_pkg_tar")
+
+create_file(
+    name = "create_file"
+)
+
+macro_using_pkg_tar(
+    name = "foo",
+    srcs = [
+        ":create_file",
+    ],
+)

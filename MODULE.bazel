@@ -1,0 +1,3 @@
+module(name="rules_pkg_package_dir")
+
+bazel_dep(name = "rules_pkg", version = "1.0.1")
