@@ -1,3 +1,4 @@
 module(name="rules_pkg_package_dir")
 
-bazel_dep(name = "rules_pkg", version = "1.0.1")
+bazel_dep(name = "rules_pkg", version = "0.9.1")
+# bazel_dep(name = "rules_pkg", version = "1.0.1")
